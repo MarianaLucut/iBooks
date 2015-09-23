@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class register_controller extends CI_Controller {
+class Signin extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -20,7 +20,7 @@ class register_controller extends CI_Controller {
 	 */
 	public function index()
 	{
-            $data['content'] = 'menu_pages/register';
-            $this->load->view('register_view', $data);
+            $data['content'] = 'menu_pages/signin';
+            $this->load->view('user_view', $data);
 	}
 }

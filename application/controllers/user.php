@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class user_controller extends CI_Controller {
+class User extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -20,7 +20,7 @@ class user_controller extends CI_Controller {
 	 */
 	public function index()
 	{
-            $data['content'] = 'menu_pages/home';
+            $data['content'] = 'menu_pages/home_view';
             $this->load->view('user_view', $data);
 	}
 }
