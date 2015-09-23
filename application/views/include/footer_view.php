@@ -50,7 +50,7 @@
                     <ul class="bxslider">
                         <li>
                             <div class="thumb">
-                            	<a href="#"><img src="images/article.jpg" alt=""></a>
+                            	<a href="#"><img src="<?php echo base_url();?>images/article.jpg" alt=""></a>
                             </div>
                             <div class="text">
                                 <p class="color">Duis semper nuncid</p>
@@ -59,7 +59,7 @@
                         </li>
                         <li>
                             <div class="thumb">
-                            	<a href="#"><img src="images/article.jpg" alt=""></a>
+                            	<a href="#"><img src="<?php echo base_url();?>images/article.jpg" alt=""></a>
                             </div>
                             <div class="text">
                                 <p class="color">Duis semper nuncid</p>
@@ -68,7 +68,7 @@
                         </li>
                         <li>
                             <div class="thumb">
-                            	<a href="#"><img src="images/article.jpg" alt=""></a>
+                            	<a href="#"><img src="<?php echo base_url();?>images/article.jpg" alt=""></a>
                             </div>
                             <div class="text">
                                 <p class="color">Duis semper nuncid</p>
@@ -86,7 +86,7 @@
                     <ul>
                         <li>
                             <div class="thumb">
-                                <a href="#"><img src="images/toprated.jpg" alt=""></a>
+                                <a href="#"><img src="<?php echo base_url();?>images/toprated.jpg" alt=""></a>
                             </div>
                             <div class="text">
                                 <p>Business Plan Buil a Business Plan..</p>
@@ -95,7 +95,7 @@
                         </li>
                         <li>
                             <div class="thumb">
-                                <a href="#"><img src="images/toprated.jpg" alt=""></a>
+                                <a href="#"><img src="<?php echo base_url();?>images/toprated.jpg" alt=""></a>
                             </div>
                             <div class="text">
                                 <p>Business Plan Buil a Business Plan..</p>
@@ -104,7 +104,7 @@
                         </li>
                         <li>
                             <div class="thumb">
-                                <a href="#"><img src="images/toprated.jpg" alt=""></a>
+                                <a href="#"><img src="<?php echo base_url();?>images/toprated.jpg" alt=""></a>
                             </div>
                             <div class="text">
                                 <p>Business Plan Buil a Business Plan..</p>
@@ -122,7 +122,7 @@
                     <ul>
                         <li>
                             <div class="thumb">
-                                <a href="#"><img src="images/toprated.jpg" alt=""></a>
+                                <a href="#"><img src="<?php echo base_url();?>images/toprated.jpg" alt=""></a>
                             </div>
                             <div class="text">
                                 <p>Trusted Certificate</p>
@@ -131,7 +131,7 @@
                         </li>
                         <li>
                             <div class="thumb">
-                                <a href="#"><img src="images/toprated.jpg" alt=""></a>
+                                <a href="#"><img src="<?php echo base_url();?>images/toprated.jpg" alt=""></a>
                             </div>
                             <div class="text">
                                 <p>1200 Video Lessons</p>
@@ -140,7 +140,7 @@
                         </li>
                         <li>
                             <div class="thumb">
-                                <a href="#"><img src="images/toprated.jpg" alt=""></a>
+                                <a href="#"><img src="<?php echo base_url();?>images/toprated.jpg" alt=""></a>
                             </div>
                             <div class="text">
                                 <p>1200 Video Lessons</p>
@@ -213,7 +213,7 @@
                     <div class="widget widget-facebook">
                         <h2>Fcebook</h2>
                         <div class="pull-left">
-                            <img src="images/facebook-widget.jpg" alt="">
+                            <img src="<?php echo base_url();?>images/facebook-widget.jpg" alt="">
                         </div>
                     </div>
                 </div>

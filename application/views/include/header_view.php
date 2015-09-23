@@ -35,7 +35,7 @@
         <div class="account">
             <ul>
                 <li><a href="#">Contact</a></li>
-                <li><a href="#">Sign Out</a></li>
+                <li><a href = "<?php echo base_url();?>signin/student_login">Log in</a></li>
                 <li>
                     <div class="dropdown">
                         <a class="dropdown-toggle" id="account" role="button" data-toggle="dropdown" data-target="#" href="/page.html">
@@ -59,7 +59,7 @@
 <div class="navigation-bar">
     <div class="container">
         <div class="logo">
-            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <a href="index.html"><img src="<?php echo base_url();?>images/logo.png" alt=""></a>
        </div>
         <div class="cart">
             <ul>

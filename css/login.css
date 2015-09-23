@@ -1,0 +1,16 @@
+.form-box
+{
+    min-height:auto;
+    margin: auto 0 40px 350px  ;
+}
+
+a, a:hover
+{
+    color: white;
+}
+
+.submit-user
+{
+    display: block;
+}
+

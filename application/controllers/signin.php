@@ -20,7 +20,19 @@ class Signin extends CI_Controller {
 	 */
 	public function index()
 	{
-            $data['content'] = 'menu_pages/signin';
+            $data['content'] = 'menu_pages/student_login_view';
             $this->load->view('user_view', $data);
 	}
+        
+        public function student_login()
+        {
+            $data['content'] = 'menu_pages/student_login_view';
+            $this->load->view('user_view', $data);
+        }
+        
+        public function user_login()
+        {
+            $data['content'] = 'menu_pages/user_login_view';
+            $this->load->view('user_view', $data);
+        }
 }

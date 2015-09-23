@@ -21,6 +21,7 @@
         <link href="<?php echo base_url();?>css/prettyPhoto.css" rel="stylesheet" media="screen">
         <!-- PARALLAX BACKGROUNDS -->
         <link href="<?php echo base_url();?>css/parallax.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url();?>css/login.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
 
@@ -30,6 +31,7 @@
             <?php  
                 //header section
                 include "include/header_view.php"; 
+                //content section
                 $this->load->view($content);
                 //footer section
                 include "include/footer_view.php"; 
@@ -48,13 +50,14 @@
         <script src="<?php echo base_url();?>js/jquery.prettyPhoto.js"></script>
         <script src="<?php echo base_url();?>js/modernizr.js"></script>
         <script type="text/javascript" src="<?php echo base_url();?>js/skrollr.min.js"></script>
-        <script src="<?php echo base_url();?>js/functions.js"></script>   
-         <script src="<?php echo base_url();?>js/jquery.validate.js"></script>   
+        <script src="<?php echo base_url();?>js/functions.js"></script>  
+        <!-- Validators -->
+        <script src="<?php echo base_url();?>js/jquery.validate.js"></script>   
         <script src="<?php echo base_url();?>js/validationRules.js"></script>   
  <script>
 $(document).ready(function(){
       
-    $("#registerForm").validate(
+    $("#user-login-form").validate(
     {
         rules: { 
           firstname: "required",
