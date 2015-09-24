@@ -28,22 +28,20 @@
                         <form id="registerForm" method="ge">
                         	<div class="form-body">
                             <fieldset>
-                                <legend>First time here? Sign up now!</legend>
+                                <legend style="text-align:center">First time here? Sign up now!</legend>
                              
                                     	<label>First Name</label>
-                               			<input id="firstname" type="text" name="firstname" placeholder="First Name" minlength="2" class="span3" >
+                               			<input id="firstname" type="text" name="firstname" placeholder="First Name" minlength="2" class="span4" >
                           
                                  
-                                   <p>
+                                 
                                     	<label>Last Name</label>
                                			<input id="lastname" type="text" name="lastname" placeholder="Last Name" class="input-block-level span4" >
-                                 </p>
-                                 <p>
+                               
                                 
                                 <label>Email Address</label>
                                 <input id="email" type="text" name="email" placeholder="Enter your E-mail ID" class="input-block-level span4" >
-                                 </p>
-
+                               
                                   <label>Choose your role</label>
                                   <select>
                                           <option value="Student">Student</option>
@@ -52,19 +50,18 @@
 
                                   </select>
                                  
-                                  <p>
+                                
                                  <label>School</label>
-                                <input type="text" placeholder="Enter your school name" class="input-block-level span4" >
-                               </p>
+                                <input type="text" placeholder="Enter your school name" class="input-block-level span4" required >
+                             
                                <div>
                                    <br>
-                                   <p>
+                                  
                                      <label>Username</label>
                                     <input id="username" name="username" type="text"  minlength="2" placeholder="Username" class="input-block-level span4" >
-                                  </p>
-                                  <p>
+                               
                                     <label>Password</label>
-                                    <input id="password" name="password" type="password" placeholder="Enter Password" class="input-block-level span4" >
+                                    <input id="password" name="password" type="password" placeholder="eg. X8df!90EO" class="input-block-level span4" >
 
                                      <label>Confirm Password</label>
                                     <input id="confirm_password" name="confirm_password" type="password" placeholder="Enter Password" class="input-block-level span4" >
