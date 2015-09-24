@@ -33,7 +33,7 @@
                                     <label>Password</label>
                                     <input type="password" placeholder="Enter Password" class="input-block-level" maxlength="20" name = "password" >                        
                                     
-                                    <button type="submit" class="btn-style green-button">Submit</button>
+                                    <button type="submit" class="btn-style green-button">Login</button>
                                     <button type="button" class="btn-style green-button"> <a href = "<?php echo base_url();?>signin/user_login">I am not a student</a></button>
                                     <button type="button" class="btn-style green-button"> <a href = "<?php echo base_url();?>register">Create Account</a></button>
                                

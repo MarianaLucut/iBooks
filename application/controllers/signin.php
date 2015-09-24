@@ -18,19 +18,20 @@ class Signin extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function index()
+        public $user = "";
+        public function index()
 	{
             $data['content'] = 'menu_pages/student_login_view';
-            $this->load->view('user_view', $data);
-           
+            $this->load->view('user_view', $data);           
 	}
         
         public function student_login()
         {     
             $this->load->library('form_validation');
             $this->form_validation->set_rules('username','Email Address or Username','trim|required|max_length[45]');
-            $this->form_validation->set_rules('password','Password','trim|required|min_length[5]|max_length[20]|md5');
+            $this->form_validation->set_rules('password','Password','trim|required|min_length[5]|max_length[20]|md5|callback_verifyUser');
             
+            $this->user = "student";
             if ($this->form_validation->run() == FALSE)
             {
 		$data['content'] = 'menu_pages/student_login_view';
@@ -38,8 +39,7 @@ class Signin extends CI_Controller {
             }
             else
             {
-		$data['content'] = 'menu_pages/home_view';
-                $this->load->view('user_view', $data);
+		redirect('user/index');
             }
         }
         
@@ -50,8 +50,9 @@ class Signin extends CI_Controller {
             $this->load->view('user_view', $data);
             
             $this->form_validation->set_rules('username','Email Address or Username','trim|required|max_length[45]');
-            $this->form_validation->set_rules('password','Password','trim|required|min_length[5]|max_length[20]|md5');
+            $this->form_validation->set_rules('password','Password','trim|required|callback_verifyUser|min_length[5]|max_length[20]|md5');
             
+            $this->user = "parent";
             if ($this->form_validation->run() == FALSE)
             {
 		$data['content'] = 'menu_pages/student_login_view';
@@ -59,27 +60,25 @@ class Signin extends CI_Controller {
             }
             else
             {
-		$data['content'] = 'menu_pages/home_view';
-                $this->load->view('user_view', $data);
+		redirect('user/index');
             }
         }
         
-        public function verify_user()
-    {
-        $name = $this->input->post('username');
-        $password = md5($this->input->post('password'));
-//        $user = $name;
-//        $this->session->set_userdata('user_name',$user);
-        $this->load->model('user_model');
-        
-        if($this->user_model->login($name,$password))       
+        public function verifyUser()
         {
-            return true;
-        }       
-        else 
-        {
-            $this->form_validation->set_message('verifyUser', 'You are not registered! Please create an account!');
-            return false;
+            $name = $this->input->post('username');
+            $password = md5($this->input->post('password'));
+
+            $this->load->model('user_model');
+
+            if($this->user_model->login($name, $password, $this->user))       
+            {            
+                return true;
+            }       
+            else 
+            {
+                $this->form_validation->set_message('verifyUser', 'You are not registered! Please create an account!');
+                return false;
+            }
         }
-    }
 }

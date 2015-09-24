@@ -1,4 +1,4 @@
-<?php //   echo validation_errors(); ?>   
+<?php echo validation_errors(); ?>   
 <!--BANNER START-->
     <div class="page-heading">
         <div class="container">
@@ -29,9 +29,9 @@
                                 <fieldset>
                                     <legend>Login</legend>
                                     <label>Email Address or Username</label>
-                                    <input type="text" placeholder="Enter your E-mail ID" class="input-block-level" maxlength="45">
+                                    <input type="text" placeholder="Enter your E-mail ID or Username" class="input-block-level" maxlength="45" name = "username">
                                     <label>Password</label>
-                                    <input type="password" placeholder="Enter Password" class="input-block-level" maxlength="20">   
+                                    <input type="password" placeholder="Enter Password" class="input-block-level" maxlength="20" name = "password">   
                                     <label>Login as</label>
                                     <select class="form-control" required>
                                         <option>Teacher</option>
