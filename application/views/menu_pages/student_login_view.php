@@ -24,7 +24,7 @@
             <div class="row">
             	<div class="span5">
                     <div class="form-box">
-                        <form method = "post">
+                        <form id = 'student-form' method = "post">
                             <div class="form-body span5">
                                 <fieldset>
                                     <legend>Login as student</legend>
@@ -33,12 +33,15 @@
                                     <label>Password</label>
                                     <input type="password" placeholder="Enter Password" class="input-block-level" maxlength="20" name = "password" >                        
                                     
-                                    <button type="submit" class="btn-style">Submit</button>
-                                    <button type="button" class="btn-style"> <a href = "<?php echo base_url();?>signin/user_login">I am not a student</a></button>
+                                    <button type="submit" class="btn-style green-button">Submit</button>
+                                    <button type="button" class="btn-style green-button"> <a href = "<?php echo base_url();?>signin/user_login">I am not a student</a></button>
+                                    <button type="button" class="btn-style green-button"> <a href = "<?php echo base_url();?>register">Create Account</a></button>
+                               
                                 </fieldset>
                             </div>
-                             <?php //echo validation_errors(); ?> 
-<!--                            <div class="footer">
+                              
+                            <div class="footer">
+                                <?php echo validation_errors(); ?><!--
                                 <ul>
                                     <li><a href="#">I Forgot My Password</a></li>
                                     <li><a href="#">Re-send Confirmation Email</a></li>
@@ -46,7 +49,7 @@
                                     <li><a href="#">Terms of Use</a></li>
                                 </ul>
                                 <button class="btn-style">Register</button>
-                            </div>-->
+-->                            </div>
                         </form>
                     </div>
                 </div>     

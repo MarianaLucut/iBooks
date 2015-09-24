@@ -24,7 +24,7 @@
             <div class="row">
             	<div class="span5">
                     <div class="form-box">
-                        <form>
+                        <form id = "user-form" method = "post">
                             <div class="form-body span5">
                                 <fieldset>
                                     <legend>Login</legend>
@@ -39,6 +39,7 @@
                                     </select>
                                     
                                     <button type="submit" class="btn-style submit-user">Submit</button>
+                                    <button type="button" class="btn-style green-button"> <a href = "<?php echo base_url();?>register">Create Account</a></button>
                                     
                                 </fieldset>
                             </div>

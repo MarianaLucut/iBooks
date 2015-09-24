@@ -1,0 +1,27 @@
+.form-box
+{
+    min-height:auto;
+    margin: auto 0 40px 360px  ;
+}
+
+a, a:hover
+{
+    color: white;
+}
+
+.submit-user
+{
+    display: block;
+}
+
+.green-button
+{
+    display: inline;
+    alignment-adjust:central;
+    margin: 5px 20px 10px 0;
+}
+.footer
+{    
+    font-weight:bold;
+    color: red;
+}
