@@ -1,11 +1,12 @@
-
+var form;
 (function()
 {
-	$("#registerForm").validate();
+	validate();
 	function validate()
 	{
+     form = $("#registerForm");
 		
-	$("#registerForm").validate(
+	form.validate(
 	{
 	    rules: {
 	      firstname: "required",
@@ -29,26 +30,8 @@
 	      	  email: true
 	      }
 	    },
-	    messages: {
-	       firstname: "Please enter your firstname",
-	       lastname: "Please enter your lastname ",
-	       username: {
-	       	   required: "Please enter a username",
-	       	   minlength:"Your username must be at least 2 characters "
-	       },
-	       password: {
-			   required: "Please enter a password",
-	       	   minlength:"Your password must be at least 5 characters "
-	       },
-	       confirm_password: {
-			   required: "Please enter a password",
-	       	   minlength:"Your password must be at least 5 characters "
-	       },
-	    },
-	       submitHandler: function(form) {
-            form.submit();
-        }
-
+	   
+	      
 	});
 }
 })();

@@ -5,7 +5,12 @@
         <title>Education</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- CUSTOM CSS -->
+
         <link href="<?php echo base_url();?>css/style.css" rel="stylesheet" media="screen">
+<!--                 <link href="<?php echo base_url();?>css/site-demos.css" rel="stylesheet" media="screen">
+ -->
+                <link href="<?php echo base_url();?>css/myStyle.css" rel="stylesheet" media="screen">
+
         <link href="<?php echo base_url();?>css/color.css" rel="stylesheet" media="screen">
         <link href="<?php echo base_url();?>css/transitions.css" rel="stylesheet" media="screen">
         <!-- BOOTSTRAP -->
@@ -21,7 +26,6 @@
         <link href="<?php echo base_url();?>css/prettyPhoto.css" rel="stylesheet" media="screen">
         <!-- PARALLAX BACKGROUNDS -->
         <link href="<?php echo base_url();?>css/parallax.css" rel="stylesheet" type="text/css" />
-        <link href="<?php echo base_url();?>css/login.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
 
@@ -31,7 +35,6 @@
             <?php  
                 //header section
                 include "include/header_view.php"; 
-                //content section
                 $this->load->view($content);
                 //footer section
                 include "include/footer_view.php"; 
@@ -50,56 +53,9 @@
         <script src="<?php echo base_url();?>js/jquery.prettyPhoto.js"></script>
         <script src="<?php echo base_url();?>js/modernizr.js"></script>
         <script type="text/javascript" src="<?php echo base_url();?>js/skrollr.min.js"></script>
-        <script src="<?php echo base_url();?>js/functions.js"></script>  
-        <!-- Validators -->
-        <script src="<?php echo base_url();?>js/jquery.validate.js"></script>   
+        <script src="<?php echo base_url();?>js/functions.js"></script>   
+         <script src="<?php echo base_url();?>js/jquery.validate.js"></script>   
         <script src="<?php echo base_url();?>js/validationRules.js"></script>   
- <script>
-$(document).ready(function(){
-      
-    $("#user-login-form").validate(
-    {
-        rules: { 
-          firstname: "required",
-          lastname: "required",
-          username: {
-              required: true,
-              minlength: 2
-          },
-          password: {
-              required: true,
-              minlength: 5
-          },
-          confirm_password: {
-              required: true,
-              minlength: 5,
-              equalTo : "#password"
-
-          },
-          email: {
-              required: true,
-              email: true
-          }
-        },
-        messages: {
-           firstname: "Please enter your firstname",
-           lastname: "Please enter your lastname ",
-           username: {
-               required: "Please enter a username",
-               minlength:"Your username must be at least 2 characters "
-           },
-           password: {
-               required: "Please enter a password",
-               minlength:"Your password must be at least 5 characters "
-           },
-           confirm_password: {
-               required: "Please enter a password",
-               minlength:"Your password must be at least 5 characters "
-           },
-        }
-    });
-});
- </script>
 
     </body>    
 </html>
