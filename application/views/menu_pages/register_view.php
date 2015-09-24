@@ -25,17 +25,17 @@
             	
                 <div class="span9 col-lg-1 col-centered">
                 	<div class="form-box" >
-                        <form id="registerForm" method="ge">
+                        <form id="registerForm" autocomplete="on" method="get">
                         	<div class="form-body">
                             <fieldset>
                                 <legend style="text-align:center">First time here? Sign up now!</legend>
                              
-                                    	<label>First Name</label>
+                                    	<label data-icon="p">First Name</label>
                                			<input id="firstname" type="text" name="firstname" placeholder="First Name" minlength="2" class="span4" >
                           
                                  
                                  
-                                    	<label>Last Name</label>
+                                    	<label data-icon="u">Last Name</label>
                                			<input id="lastname" type="text" name="lastname" placeholder="Last Name" class="input-block-level span4" >
                                
                                 
