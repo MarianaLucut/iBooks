@@ -1,4 +1,5 @@
-  <!--BANNER START-->
+<?php //   echo validation_errors(); ?>  
+<!--BANNER START-->
     <div class="page-heading">
         <div class="container">
             <h2>Sign In</h2>
@@ -23,19 +24,20 @@
             <div class="row">
             	<div class="span5">
                     <div class="form-box">
-                        <form>
+                        <form method = "post">
                             <div class="form-body span5">
                                 <fieldset>
                                     <legend>Login as student</legend>
                                     <label>Email Address or Username</label>
-                                    <input type="text" placeholder="Enter your E-mail ID" class="input-block-level" maxlength="45">
+                                    <input type="text" placeholder="Enter your E-mail ID" class="input-block-level" maxlength="45" name = "username">
                                     <label>Password</label>
-                                    <input type="password" placeholder="Enter Password" class="input-block-level" maxlength="20">                        
+                                    <input type="password" placeholder="Enter Password" class="input-block-level" maxlength="20" name = "password" >                        
                                     
                                     <button type="submit" class="btn-style">Submit</button>
                                     <button type="button" class="btn-style"> <a href = "<?php echo base_url();?>signin/user_login">I am not a student</a></button>
                                 </fieldset>
                             </div>
+                             <?php //echo validation_errors(); ?> 
 <!--                            <div class="footer">
                                 <ul>
                                     <li><a href="#">I Forgot My Password</a></li>

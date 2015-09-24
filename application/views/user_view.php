@@ -36,8 +36,10 @@
                 //header section
                 include "include/header_view.php"; 
                 $this->load->view($content);
+//                echo validation_errors();
                 //footer section
                 include "include/footer_view.php"; 
+                
             ?>
         </div>
         <!-- Jquery Lib -->
@@ -55,8 +57,7 @@
         <script type="text/javascript" src="<?php echo base_url();?>js/skrollr.min.js"></script>
         <script src="<?php echo base_url();?>js/functions.js"></script>   
          <script src="<?php echo base_url();?>js/jquery.validate.js"></script>   
-        <script src="<?php echo base_url();?>js/validationRules.js"></script>   
-
+        <script src="<?php echo base_url();?>js/validationRules.js"></script>  
     </body>    
 </html>
        

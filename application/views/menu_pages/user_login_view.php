@@ -1,4 +1,5 @@
-  <!--BANNER START-->
+<?php //   echo validation_errors(); ?>   
+<!--BANNER START-->
     <div class="page-heading">
         <div class="container">
             <h2>Sign In</h2>

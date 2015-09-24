@@ -26,8 +26,21 @@ class Signin extends CI_Controller {
         
         public function student_login()
         {
-            $data['content'] = 'menu_pages/student_login_view';
-            $this->load->view('user_view', $data);
+//            $data['content'] = 'menu_pages/student_login_view';
+//            $this->load->view('user_view', $data);
+            $this->load->library('form_validation');
+            $this->form_validation->set_rules('username','Email Address','trim|required|max_length[45]');
+            $this->form_validation->set_rules('password','Password','trim|required|min_length[4]|max_length[20]|md5');
+            if ($this->form_validation->run() == FALSE)
+            {
+		$data['content'] = 'menu_pages/student_login_view';
+                $this->load->view('user_view', $data);
+            }
+            else
+            {
+		$data['content'] = 'menu_pages/home_view';
+                $this->load->view('user_view', $data);
+            }
         }
         
         public function user_login()
