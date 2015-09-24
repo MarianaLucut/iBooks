@@ -187,7 +187,6 @@ CREATE TABLE `student` (
   `Id` int(11) NOT NULL AUTO_INCREMENT,
   `Class_Id` int(11) DEFAULT NULL,
   `Parent_Id` int(11) DEFAULT NULL,
-  `Username` varchar(45) DEFAULT NULL,
   `Avatar` varchar(45) DEFAULT NULL,
   `User_Id` int(11) DEFAULT NULL,
   PRIMARY KEY (`Id`),
@@ -313,6 +312,7 @@ CREATE TABLE `user` (
   `City` varchar(45) DEFAULT NULL,
   `School_Id` int(11) DEFAULT NULL,
   `Role` varchar(20) DEFAULT NULL,
+  `Username` varchar(45) DEFAULT NULL,
   `Password` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`Id`),
   UNIQUE KEY `UniqueLog` (`Email`,`Role`),
@@ -368,4 +368,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-09-24 10:32:55
+-- Dump completed on 2015-09-24 15:41:11
