@@ -1,0 +1,27 @@
+.form-box
+{	
+    min-height:auto;
+    margin-top: 50px  ;
+}
+
+.usr-pass
+{
+	height:110px;
+}
+input
+{
+	
+	width:100%;	
+}
+.error
+{	
+	color:red;
+	float:none;
+	text-align:left;
+}
+
+
+
+
+
+
