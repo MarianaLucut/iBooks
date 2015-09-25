@@ -1,4 +1,4 @@
-<?php echo validation_errors(); ?>   
+  
 <!--BANNER START-->
     <div class="page-heading">
         <div class="container">
@@ -43,7 +43,8 @@
                                     
                                 </fieldset>
                             </div>
-<!--                            <div class="footer">
+                            <div class="footer"> 
+                                <?php echo validation_errors(); ?><!--
                                 <ul>
                                     <li><a href="#">I Forgot My Password</a></li>
                                     <li><a href="#">Re-send Confirmation Email</a></li>
@@ -51,7 +52,7 @@
                                     <li><a href="#">Terms of Use</a></li>
                                 </ul>
                                 <button class="btn-style">Register</button>
-                            </div>-->
+-->                            </div>
                         </form>
                     </div>
                 </div>     

@@ -1,4 +1,4 @@
-<?php //   echo validation_errors(); ?>  
+ 
 <!--BANNER START-->
     <div class="page-heading">
         <div class="container">
@@ -24,14 +24,14 @@
             <div class="row">
             	<div class="span5">
                     <div class="form-box">
-                        <form id = 'student-form' method = "post">
+                        <form id = 'student-form' method = "post" action = "http://localhost/iBooks/trunk/signin/student_login">
                             <div class="form-body span5">
                                 <fieldset>
                                     <legend>Login as student</legend>
                                     <label>Email Address or Username</label>
-                                    <input type="text" placeholder="Enter your E-mail ID" class="input-block-level" maxlength="45" name = "username">
+                                    <input type="text" placeholder="Enter your E-mail ID or Username" class="input-block-level" maxlength="45" name = "username">
                                     <label>Password</label>
-                                    <input type="password" placeholder="Enter Password" class="input-block-level" maxlength="20" name = "password" >                        
+                                    <input type="password" placeholder="Enter Password" class="input-block-level" maxlength="60" name = "password" >                        
                                     
                                     <button type="submit" class="btn-style green-button">Login</button>
                                     <button type="button" class="btn-style green-button"> <a href = "<?php echo base_url();?>signin/user_login">I am not a student</a></button>
